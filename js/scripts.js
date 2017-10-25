@@ -3,8 +3,9 @@ var infoWindowWidth = 300;
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
-    center: {lat: 50.207040, lng:5.510976},
+    center: {lat: 48.139840, lng:7.569656},
     mapTypeControl: false,
+    scrollwheel: false,
     streetViewControl: false,
     styles: [
         {
