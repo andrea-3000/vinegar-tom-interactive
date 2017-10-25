@@ -389,7 +389,7 @@ var coordinates = [
             '<div class="site-notice">'+
             '</div>'+
             '<h1 class="first-heading">Alternative für Deutschland</h1>'+
-            '<img id="afd" src="../images/afd.png"/>'+
+            '<img id="afd" src="images/afd.png"/>'+
             '<div class="body-content">'+
             '<p>Germany held its 2017 Bundestag elections this September. AfD, a far-right Populist party, won 12.6% of the votes, meaning that they will have representatives in Germany’s Parliament. Their campaign posters focused on a Germany first platform, particularly targeting refugees and Muslims. This ad reads ““Burkas?” We wear Bikinis.” This poster caused outrage in Germany for its sexist and Islamophobic messages. However, AfD now has seats in the Bundestag. This is the first time a far-right party has had seats in the German Parliament since the election of the Nazi party.</p>'+
             '</div>'+
@@ -406,7 +406,7 @@ var coordinates = [
             '<div class="site-notice">'+
             '</div>'+
             '<h1 class="first-heading">Italy\'s Fertility Day</h1>'+
-            '<img id="fertility" src="../images/fertility.png"/>'+
+            '<img id="fertility" src="images/fertility.png"/>'+
             '<div class="body-content">'+
             '<p>In 2016, Italy’s Ministry of Health launched a “Fertility Day” campaign that aimed to reverse Italy’s low birthrate. The ads featured sexist slogans, such as one that read, “Beauty doesn’t have an age. Fertility does.” The signs were met with anger over the belittling of women’s issues such as equal workplace pay and affordable childcare. Many people said the ads were reminiscent of Fascist Italy, where women were encouraged to have as many children as possible, because it was seen as their duty to their state.</p>'+
             '</div>'+
