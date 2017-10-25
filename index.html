@@ -2,16 +2,70 @@
 <html>
   <head>
     <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
-    <style>
-      #map {
-        height: 800px;
-        width: 100%;
-       }
-    </style>
+
+    <script src="https://use.typekit.net/qnc1gjh.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link rel="stylesheet" href="css/jquery.fullpage.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
   </head>
   <body>
-    <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
+    <div id="fullpage">
+      <div class="section page-1">
+        <div class="title-card">
+          <h1>VINEGAR TOM</h1>
+          <h3>instances of female oppression within Europe</h3>
+        </div>
+      </div>
+
+      <div class="section page-2">
+        <h3>Instances of Female Oppression</h3>
+        <div id="map"></div>
+        <p>
+          curated by Meg Hancock
+        </p>
+      </div>
+
+      <div class="section page-3">
+        <h1>Sources</h1>
+        <ul>
+          <li><a href="http://history.hanover.edu/texts/wurz.html">The Witch Persecution at Wurzburg</a>
+          </li>
+          <li>
+            <a href="https://www.theguardian.com/world/ng-interactive/2017/sep/24/german-elections-2017-latest-results-live-merkel-bundestag-afd">German elections 2017: full results</a>
+          </li>
+          <li>
+            <a href="https://www.britannica.com/topic/Malleus-maleficarum#ref247982">Malleus maleficarum</a>
+          </li>
+          <li>
+             <a href="https://www.usatoday.com/story/news/world/2016/09/22/italy-infertility-campaign-advertisement/90831400/">Italy's campaign for more babies called racist, sexist</a>
+          </li>
+          <li>
+            <a href="http://www.gutenberg.org/files/15493/15493-h/15493-h.htm">The Lancashire Witches: A Romance of Pendle Forest by William Harrison Ainsworth</a>
+          </li>
+          <li>
+            <a href="https://www.nytimes.com/2017/01/25/world/europe/high-heels-british-inquiry-dress-codes-women.html?_r=0">Sent Home for Not Wearing Heels, She Ignited a British Rebellion</a>
+          </li>
+          <li>
+            <a href="https://www.theguardian.com/world/2017/mar/14/headscarves-and-muslim-veil-ban-debate-timeline">Burqa bans, headscarves and veils: a timeline of legislation in the west</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors: ['page-1', 'page-2', 'page-3'],
+          navigation: true,
+          navigationPosition: 'right',
+          responsiveWidth: 1100,
+          bigSectionsDestination: 'top',
+        });
+      });
+    </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD42ruKjGZPgp7KBOZXN0haawFvFLYyHPE&callback=initMap">
     </script>
