@@ -7,14 +7,13 @@ h1 {
   font-family: 'Okami', sans-serif;
 }
 
-h2, h3, p {
+h2, h3, p, li {
   font-family: "ltc-bodoni-175";
 }
 
-#map {
-  height: 500px;
-  width: 100%;
- }
+ul {
+  list-style: none;
+}
 
 .title-card {
 	position: absolute;
@@ -22,4 +21,13 @@ h2, h3, p {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+#afd, #fertility {
+  max-width: 300px;
 }

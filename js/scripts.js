@@ -1,3 +1,5 @@
+var infoWindowWidth = 300;
+
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 5,
@@ -375,67 +377,69 @@ function initMap() {
 }
 
 var coordinates = [
-  ['Würzburg', 49.792017, 9.950237, 4, '<div id="content">'+
-            '<div id="siteNotice">'+
+  ['Würzburg', 49.792017, 9.950237, 4, '<div class="content">'+
+            '<div class="site-notice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Würzburg Witch Trials</h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="first-heading">Würzburg Witch Trials</h1>'+
+            '<div class="body-content">'+
             '<p>One of the largest mass witch trials in European history, the <b>Würzburg Witch Trials</b> took place from 1626 to 1631. Witch-hunting committees were formed to investigate the townspeople of Würzburg. People from every rank of society were accused and executed, from high-ranking councilmen to young peasant children. Overall, 157 people were beheaded then burned at the stake in Würzburg, and a likely 900 were killed in the entire region. Most of the names of the accused are unknown, but one victim, nineteen-year-old Gobel Babelin was written about extensively. In a letter, the Chancellor of the Prince-Bishop of Würzburg wrote of her, “A week ago a maiden of nineteen was executed, of whom it is everywhere said that she was the fairest in the whole city.”</p>'+
             '</div>'+
             '</div>'],
-  ['Berlin', 52.520050, 13.404871, 5, '<div id="content">'+
-            '<div id="siteNotice">'+
+  ['Berlin', 52.520050, 13.404871, 5, '<div class="content">'+
+            '<div class="site-notice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Alternative für Deutschland</h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="first-heading">Alternative für Deutschland</h1>'+
+            '<img id="afd" src="../images/afd.png"/>'+
+            '<div class="body-content">'+
             '<p>Germany held its 2017 Bundestag elections this September. AfD, a far-right Populist party, won 12.6% of the votes, meaning that they will have representatives in Germany’s Parliament. Their campaign posters focused on a Germany first platform, particularly targeting refugees and Muslims. This ad reads ““Burkas?” We wear Bikinis.” This poster caused outrage in Germany for its sexist and Islamophobic messages. However, AfD now has seats in the Bundestag. This is the first time a far-right party has had seats in the German Parliament since the election of the Nazi party.</p>'+
             '</div>'+
             '</div>'],
-  ['Speyer', 49.316830, 8.439153, 3, '<div id="content">'+
-            '<div id="siteNotice">'+
+  ['Speyer', 49.316830, 8.439153, 3, '<div class="content">'+
+            '<div class="site-notice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Publication of <em>Malleus Maleifcarum</em></h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="first-heading">Publication of <em>Malleus Maleifcarum</em></h1>'+
+            '<div class="body-content">'+
             '<p>Written in 1486, Malleus Maleficarum is known as the foremost treatise on witchcraft. The work was written by clergyman Heinrich Kramer, and later Jacob Sprenger’s name was also added as an author. The book details how people, usually women, are possessed by the devil to become witches. It argues that witchcraft should be tried as a crime in secular courts, and that torture should be used to urge witches to confess. Particularly, the book advocated for witches to be burned at the stake. It remained a bestselling book for nearly 200 years after its publication.</p>'+
             '</div>'+
             '</div>'],
-  ['Rome', 41.902671, 12.496252, 2, '<div id="content">'+
-            '<div id="siteNotice">'+
+  ['Rome', 41.902671, 12.496252, 2, '<div class="content">'+
+            '<div class="site-notice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Italy\'s Fertility Day</h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="first-heading">Italy\'s Fertility Day</h1>'+
+            '<img id="fertility" src="../images/fertility.png"/>'+
+            '<div class="body-content">'+
             '<p>In 2016, Italy’s Ministry of Health launched a “Fertility Day” campaign that aimed to reverse Italy’s low birthrate. The ads featured sexist slogans, such as one that read, “Beauty doesn’t have an age. Fertility does.” The signs were met with anger over the belittling of women’s issues such as equal workplace pay and affordable childcare. Many people said the ads were reminiscent of Fascist Italy, where women were encouraged to have as many children as possible, because it was seen as their duty to their state.</p>'+
             '</div>'+
             '</div>'],
-  ['Lancashire', 53.850536, -2.668760, 1, '<div id="content">'+
-            '<div id="siteNotice">'+
+  ['Lancashire', 53.850536, -2.668760, 1, '<div class="content">'+
+            '<div class="site-notice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Pendle Witches</h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="first-heading">Pendle Witches</h1>'+
+            '<div class="body-content">'+
             '<p>In 1612, twelve people, ten women and two men, were hung in Lancashire, England after being convicted of witchcraft. These accused mainly came from two families: the Demdikes and the Chattoxes. Each family accused the other of witchcraft, potentially due to a underlying fight about property. The matriarch of the Demdikes was Elizabeth Southerns, who was nearly 80 years old when she was hung. She had been accused of being a witch before, due to her old age and possession of pins, which were thought to have healing powers. Southerns was hung along with her daughter and two grandchildren.</p>'+
             '</div>'+
             '</div>'],
-  ['London', 51.507356, -0.127764, 1, '<div id="content">'+
-            '<div id="siteNotice">'+
+  ['London', 51.507356, -0.127764, 1, '<div class="content">'+
+            '<div class="site-notice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Heels Lawsuit</h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="first-heading">Heels Lawsuit</h1>'+
+            '<div class="body-content">'+
             '<p>Nicola Thorp, a British receptionist, was told that her flat shoes were unacceptable for her workplace. Her supervisor explained that women at the PwC accounting firm were required to wear heels that were at least two inches high. Upon investigation, Thorp learned that her firm, and several other companies in England, had dress codes that made women wear heels. After starting a petition to draw attention to the sexist requirement, other women came forward saying that they had been asked to change their appearance in the work places, including dying their hair blonde and wearing more makeup. Thorp’s petition was signed more than 150,000 times.</p>'+
             '</div>'+
             '</div>'],
-  ['Valais', 46.163517, 7.517275, 1, '<div id="content">'+
-            '<div id="siteNotice">'+
+  ['Valais', 46.163517, 7.517275, 1, '<div class="content">'+
+            '<div class="site-notice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Valais Witch Trials</h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="first-heading">Valais Witch Trials</h1>'+
+            '<div class="body-content">'+
             '<p>These 1428 trials were the first ones in Switzerland that led to systematic execution. Townspeople started being accused of witchcraft in the lower region of Valais, but the accusations quickly began to spread throughout the entirety of Valais. Local authorities proclaimed that trials would begin to convict the witches. Torture was employed if a person was accused by five or more people. The accused witches were charged with murder, heresy and sorcery, and making deals with the devil. The exact number of people executed is unknown, but is estimated to be above 200 people.</p>'+
             '</div>'+
             '</div>'],
-  ['Paris', 48.857482, 2.349461, 1, '<div id="content">'+
-            '<div id="siteNotice">'+
+  ['Paris', 48.857482, 2.349461, 1, '<div class="content">'+
+            '<div class="site-notice">'+
             '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Islamic Headscarf Ban</h1>'+
-            '<div id="bodyContent">'+
+            '<h1 class="first-heading">Islamic Headscarf Ban</h1>'+
+            '<div class="body-content">'+
             '<p>In 2011, former French prime minister, François Fillon, banned French women from wearing the niqab in public. The French law banned Muslim women from wearing the traditional clothing anywhere outside their homes. In 2014, the ban was upheld by theEuropean court of human rights. Most recently in 2016, former prime minister Manuel Valls suggested that there should be a ban on “burkini” swimsuits. The alleged basis for these bans was to encourage homogeneity among the French people.</p>'+
             '</div>'+
             '</div>']
@@ -453,7 +457,8 @@ function setMarkers(map) {
   };
 
   infowindow = new google.maps.InfoWindow({
-    content: "nuthin"
+    content: "nuthin",
+    maxWidth: infoWindowWidth
   });
 
   for (var i = 0; i < coordinates.length; i++) {
