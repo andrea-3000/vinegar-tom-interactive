@@ -11,8 +11,16 @@ h2, h3, p, li {
   font-family: "ltc-bodoni-175";
 }
 
-ul {
-  list-style: none;
+li {
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.first-heading {
+  letter-spacing: 2px;
 }
 
 .title-card {
@@ -37,3 +45,56 @@ ul {
   max-width: 300px;
   align: middle;
 }
+
+.page-1 {
+  background-color: rgb(179, 33, 44);
+}
+.page-3 {
+  background-color: black;
+  color: rgba(255, 255, 255, .9);
+  text-align: center;
+}
+
+/*.ha {
+  display: flex;
+  justify-content: space-around;
+}*/
+
+a {
+  color: gray;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 0px;
+}
+
+a:hover {
+  color: rgb(179, 33, 44);
+}
+ #cat {
+   position: absolute;
+   left: 75%;
+   top: 50%;
+   width: 500px;
+   height: 500px;
+ }
+
+ .vintom {
+   margin: 0px;
+   color: rgba(255, 255, 255, .9);
+   font-size: 200px;
+   width: 1000px;
+   letter-spacing: 5px;
+ }
+
+ #sources {
+   letter-spacing: 10px;
+   margin-top: -20px;
+   margin-bottom: 0px;
+   font-size: 150px;
+ }
+
+ ul {
+   list-style: none;
+   padding-left: 0px;
+   list-style-type: none;
+ }
