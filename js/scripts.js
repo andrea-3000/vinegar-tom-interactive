@@ -219,7 +219,7 @@ function setMarkers(map) {
   var image = 'images/hangwoman.png'; /*CHANGE IMAGE HERE ONCE YOU HAVE*/
 
   var shape = {
-    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+    coords: [1, 1, 1, 50, 30, 50, 30, 1],
     type: 'poly'
   };
 
