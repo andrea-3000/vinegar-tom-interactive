@@ -216,7 +216,7 @@ var infowindow = null;
 
 function setMarkers(map) {
 
-  var image = 'images/annieSmol.png'; /*CHANGE IMAGE HERE ONCE YOU HAVE*/
+  var image = 'images/hangwoman.png'; /*CHANGE IMAGE HERE ONCE YOU HAVE*/
 
   var shape = {
     coords: [1, 1, 1, 20, 18, 20, 18, 1],
