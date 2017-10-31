@@ -31,12 +31,16 @@ h1, h2 {
   font-family: 'Okami', sans-serif;
 }
 
-h3, p, li {
+h3, h4, p, li {
   font-family: "ltc-bodoni-175";
 }
 
 h3 {
   font-size: 30px;
+}
+
+h4 {
+  font-style: italic;
 }
 
 .margin-wrapper {
