@@ -3,12 +3,20 @@
   <head>
     <!-- so we can take german letters and umlauts hahaha -->
     <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=utf-8">
-
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <title>Vinegar Tom - Interactive</title>
 
     <!-- typekit -->
     <script src="https://use.typekit.net/qnc1gjh.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- livereload -->
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script>document.write('<script src="http://'
+      + location.host.split(':')[0]
+      + ':35729/livereload.js"></'
+      + 'script>')
+    </script>
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="css/jquery.fullpage.min.css"/>
@@ -23,11 +31,9 @@
       <!-- title web section-->
       <div class="section page-1">
         <div class="title-card">
-          <!-- <div class="ha"> -->
-          <h1 class="vintom">VINEGAR TOM</h1>
+          <h1 class="title-text">VINEGAR TOM</h1>
           <img id="cat" src="images/cat5.png">
-        <!-- </div> -->
-          <h3>Instances of Female Oppression Within Europe</h3>
+          <h3 class="subtitle">Instances of Female Oppression Within Europe</h3>
         </div>
       </div>
 
@@ -38,29 +44,35 @@
 
       <!-- sources and credits section -->
       <div class="section page-3">
-        <h1 id= "sources">Sources</h1>
-        <ul>
-          <li><a href="http://history.hanover.edu/texts/wurz.html" target="_blank">The Witch Persecution at Wurzburg</a>
-          </li>
-          <li>
-            <a href="https://www.theguardian.com/world/ng-interactive/2017/sep/24/german-elections-2017-latest-results-live-merkel-bundestag-afd" target="_blank">German elections 2017: Full Results</a>
-          </li>
-          <li>
-            <a href="https://www.britannica.com/topic/Malleus-maleficarum#ref247982" target="_blank">Malleus Maleficarum</a>
-          </li>
-          <li>
-             <a href="https://www.usatoday.com/story/news/world/2016/09/22/italy-infertility-campaign-advertisement/90831400/" target="_blank">Italy's Campaign for More Babies Called Racist, Sexist</a>
-          </li>
-          <li>
-            <a href="http://www.gutenberg.org/files/15493/15493-h/15493-h.htm" target="_blank">The Lancashire Witches: A Romance of Pendle Forest by William Harrison Ainsworth</a>
-          </li>
-          <li>
-            <a href="https://www.nytimes.com/2017/01/25/world/europe/high-heels-british-inquiry-dress-codes-women.html?_r=0" target="_blank">Sent Home for Not Wearing Heels, She Ignited a British Rebellion</a>
-          </li>
-          <li>
-            <a href="https://www.theguardian.com/world/2017/mar/14/headscarves-and-muslim-veil-ban-debate-timeline" target="_blank">Burqa Bans, Headscarves and Veils: a Timeline of Legislation in the West</a>
-          </li>
-        </ul>
+        <div class="margin-wrapper">
+          <h1 id= "sources">Sources</h1>
+          <ul>
+            <li><a href="http://history.hanover.edu/texts/wurz.html" target="_blank">The Witch Persecution at Wurzburg</a>
+            </li>
+            <li>
+              <a href="https://www.theguardian.com/world/ng-interactive/2017/sep/24/german-elections-2017-latest-results-live-merkel-bundestag-afd" target="_blank">German elections 2017: Full Results</a>
+            </li>
+            <li>
+              <a href="https://www.britannica.com/topic/Malleus-maleficarum#ref247982" target="_blank">Malleus Maleficarum</a>
+            </li>
+            <li>
+               <a href="https://www.usatoday.com/story/news/world/2016/09/22/italy-infertility-campaign-advertisement/90831400/" target="_blank">Italy's Campaign for More Babies Called Racist, Sexist</a>
+            </li>
+            <li>
+              <a href="http://www.gutenberg.org/files/15493/15493-h/15493-h.htm" target="_blank">The Lancashire Witches: A Romance of Pendle Forest by William Harrison Ainsworth</a>
+            </li>
+            <li>
+              <a href="https://www.nytimes.com/2017/01/25/world/europe/high-heels-british-inquiry-dress-codes-women.html?_r=0" target="_blank">Sent Home for Not Wearing Heels, She Ignited a British Rebellion</a>
+            </li>
+            <li>
+              <a href="https://www.theguardian.com/world/2017/mar/14/headscarves-and-muslim-veil-ban-debate-timeline" target="_blank">Burqa Bans, Headscarves and Veils: a Timeline of Legislation in the West</a>
+            </li>
+          </ul>
+          <h2>About the Project</h3>
+          <p id="about-text">
+            This interactive map was created as a complement to <a href="https://theaterstudies.duke.edu/">Duke University Theater Studies'</a> 2017 production of <a href="https://theaterstudies.duke.edu/events/caryl-churchills-vinegar-tom"><em>Vinegar Tom</em></a>. <em>Vinegar Tom</em>, written by Obie Award-winning playwright Caryl Churchill, tells the story of two sexually-spurned women in the 16th and 17th century England. The play examines the relationships between gender and power through the lens of witch trials; with this interactive, we hope to understand how witch trials have manifested in modern-day Europe. The content for this project was written by the dramaturg Meg Hancock, and Andrea Gonzales.
+          </p>
+        </div>
       </div>
     </div>
 

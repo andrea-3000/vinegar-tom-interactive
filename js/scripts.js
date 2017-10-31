@@ -19,6 +19,18 @@ function initMap() {
           ]
       },
       {
+        "featureType": "all",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            },
+            {
+                "saturation": "-100"
+            }
+        ]
+      },
+      {
           "featureType": "landscape",
           "elementType": "geometry",
           "stylers": [
@@ -32,19 +44,20 @@ function initMap() {
           "elementType": "geometry",
           "stylers": [
               {
-                  "color": "#c5531b"
+                  // "color": "#c5531b"
+                  "color": "#b52127"
               }
           ]
       },
       {
-          "featureType": "road.highway",
+          "featureType": "road",
           "elementType": "geometry.fill",
           "stylers": [
               {
                   "color": "#74001b"
               },
               {
-                  "lightness": -10
+                  "visibility": "off"
               }
           ]
       },
@@ -53,7 +66,7 @@ function initMap() {
           "elementType": "geometry.stroke",
           "stylers": [
               {
-                  "color": "#da3c3c"
+                  "visibility": "off"
               }
           ]
       },
@@ -62,7 +75,7 @@ function initMap() {
           "elementType": "geometry.fill",
           "stylers": [
               {
-                  "color": "#74001b"
+                  "visibility": "off"
               }
           ]
       },
@@ -71,7 +84,7 @@ function initMap() {
           "elementType": "geometry.stroke",
           "stylers": [
               {
-                  "color": "#da3c3c"
+                  "visibility": "off"
               }
           ]
       },
@@ -80,7 +93,7 @@ function initMap() {
           "elementType": "geometry.fill",
           "stylers": [
               {
-                  "color": "#990c19"
+                  "visibility": "off"
               }
           ]
       },
@@ -127,15 +140,6 @@ function initMap() {
           }
         ]
       },
-      {
-        "featureType": "road.local",
-        "elementType": "geometry.stroke",
-        "stylers": [
-          {
-            "visibility": "off"
-          }
-        ]
-      }
     ]
   });
 
