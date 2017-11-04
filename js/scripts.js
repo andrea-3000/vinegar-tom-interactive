@@ -170,7 +170,7 @@ var coordinates = [
             '<p>One of the largest mass witch trials in European history, the <b>Würzburg Witch Trials</b> took place from 1626 to 1631. Witch-hunting committees were formed to investigate the townspeople of Würzburg. People from every rank of society were accused and executed, from high-ranking councilmen to young peasant children. Overall, 157 people were beheaded then burned at the stake in Würzburg, and a likely 900 were killed in the entire region. Most of the names of the accused are unknown, but one victim, nineteen-year-old Gobel Babelin was written about extensively. In a letter, the Chancellor of the Prince-Bishop of Würzburg wrote of her, “A week ago a maiden of nineteen was executed, of whom it is everywhere said that she was the fairest in the whole city.”</p>'+
             '</div>'+
             '</div>'],
-  ['Berlin', 52.520050, 13.404871, 5, 'images/hangwoman.png',
+  ['Berlin', 52.520050, 13.404871, 5, 'images/annieSmol.png',
             '<div class="content">'+
             '<div class="site-notice">'+
             '</div>'+
@@ -191,7 +191,7 @@ var coordinates = [
             '<p>Written in 1486, Malleus Maleficarum is known as the foremost treatise on witchcraft. The work was written by clergyman Heinrich Kramer, and later Jacob Sprenger’s name was also added as an author. The book details how people, usually women, are possessed by the devil to become witches. It argues that witchcraft should be tried as a crime in secular courts, and that torture should be used to urge witches to confess. Particularly, the book advocated for witches to be burned at the stake. It remained a bestselling book for nearly 200 years after its publication.</p>'+
             '</div>'+
             '</div>'],
-  ['Rome', 41.902671, 12.496252, 2, 'images/hangwoman.png',
+  ['Rome', 41.902671, 12.496252, 2, 'images/annieSmol.png',
             '<div class="content">'+
             '<div class="site-notice">'+
             '</div>'+
@@ -212,7 +212,7 @@ var coordinates = [
             '<p>In 1612, twelve people, ten women and two men, were hung in Lancashire, England after being convicted of witchcraft. These accused mainly came from two families: the Demdikes and the Chattoxes. Each family accused the other of witchcraft, potentially due to a underlying fight about property. The matriarch of the Demdikes was Elizabeth Southerns, who was nearly 80 years old when she was hung. She had been accused of being a witch before, due to her old age and possession of pins, which were thought to have healing powers. Southerns was hung along with her daughter and two grandchildren.</p>'+
             '</div>'+
             '</div>'],
-  ['London', 51.507356, -0.127764, 1, 'images/hangwoman.png',
+  ['London', 51.507356, -0.127764, 1, 'images/annieSmol.png',
             '<div class="content">'+
             '<div class="site-notice">'+
             '</div>'+
@@ -232,7 +232,7 @@ var coordinates = [
             '<p>These 1428 trials were the first ones in Switzerland that led to systematic execution. Townspeople started being accused of witchcraft in the lower region of Valais, but the accusations quickly began to spread throughout the entirety of Valais. Local authorities proclaimed that trials would begin to convict the witches. Torture was employed if a person was accused by five or more people. The accused witches were charged with murder, heresy and sorcery, and making deals with the devil. The exact number of people executed is unknown, but is estimated to be above 200 people.</p>'+
             '</div>'+
             '</div>'],
-  ['Paris', 48.857482, 2.349461, 1, 'images/hangwoman.png',
+  ['Paris', 48.857482, 2.349461, 1, 'images/annieSmol.png',
             '<div class="content">'+
             '<div class="site-notice">'+
             '</div>'+
@@ -265,7 +265,7 @@ function setMarkers(map) {
     var marker = new google.maps.Marker({
       position: {lat: mark[1], lng: mark[2]},
       map: map,
-      icon: image,
+      icon: mark[4],
       shape: shape,
       title: mark[0],
       zIndex: mark[3],
