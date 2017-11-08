@@ -31,7 +31,7 @@ h1, h2 {
   font-family: 'Okami', sans-serif;
 }
 
-h3, h4, p, li {
+h3, h4, h6, p, li {
   font-family: "ltc-bodoni-175";
 }
 
@@ -39,9 +39,19 @@ h3 {
   font-size: 30px;
 }
 
-h4 {
+h4, h6 {
   font-style: italic;
 }
+
+h6 a {
+  text-decoration: none;
+  color: black;
+}
+
+h6 a:hover {
+  color: white;
+}
+
 
 .margin-wrapper {
   margin: 25px;

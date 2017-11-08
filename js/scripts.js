@@ -165,12 +165,12 @@ var icons = {
   },
   cat1: {
     icon: 'images/cat1.png',
-    coords: [1, 1, 1, 70, 100, 70, 100, 1],
+    coords: [1, 1, 1, 60, 86, 60, 86, 1],
     type: 'poly'
   },
-  cat3: {
-    icon: 'images/cat3.png',
-    coords: [1, 1, 1, 87, 50, 87, 50, 1],
+  witchOverHouse: {
+    icon: 'images/witch-over-house.png',
+    coords: [1, 1, 1, 50, 123, 50, 123, 1],
     type: 'poly'
   },
   vtCat: {
@@ -213,7 +213,7 @@ var coordinates = [
             '<p>Germany held its 2017 Bundestag elections this September. AfD, a far-right Populist party, won 12.6% of the votes, meaning that they will have representatives in Germany’s Parliament. Their campaign posters focused on a Germany first platform, particularly targeting refugees and Muslims. This ad reads ““Burkas?” We wear Bikinis.” This poster caused outrage in Germany for its sexist and Islamophobic messages. However, AfD now has seats in the Bundestag. This is the first time a far-right party has had seats in the German Parliament since the election of the Nazi party.</p>'+
             '</div>'+
             '</div>'],
-  ['Speyer', 49.316830, 8.439153, 5, 'vtCat',
+  ['Speyer', 49.316830, 8.439153, 5, 'cat1',
             '<div class="content">'+
             '<div class="site-notice">'+
             '</div>'+
@@ -244,7 +244,7 @@ var coordinates = [
             '<p>In 1612, twelve people, ten women and two men, were hung in Lancashire, England after being convicted of witchcraft. These accused mainly came from two families: the Demdikes and the Chattoxes. Each family accused the other of witchcraft, potentially due to a underlying fight about property. The matriarch of the Demdikes was Elizabeth Southerns, who was nearly 80 years old when she was hung. She had been accused of being a witch before, due to her old age and possession of pins, which were thought to have healing powers. Southerns was hung along with her daughter and two grandchildren.</p>'+
             '</div>'+
             '</div>'],
-  ['London', 51.507356, -0.127764, 1, 'animal',
+  ['London', 51.507356, -0.127764, 1, 'vtCat',
             '<div class="content">'+
             '<div class="site-notice">'+
             '</div>'+
@@ -254,7 +254,7 @@ var coordinates = [
             '<p>Nicola Thorp, a British receptionist, was told that her flat shoes were unacceptable for her workplace. Her supervisor explained that women at the PwC accounting firm were required to wear heels that were at least two inches high. Upon investigation, Thorp learned that her firm, and several other companies in England, had dress codes that made women wear heels. After starting a petition to draw attention to the sexist requirement, other women came forward saying that they had been asked to change their appearance in the work places, including dying their hair blonde and wearing more makeup. Thorp’s petition was signed more than 150,000 times.</p>'+
             '</div>'+
             '</div>'],
-  ['Valais', 46.163517, 7.517275, 1, 'cat1',
+  ['Valais', 46.163517, 7.517275, 1, 'animal',
             '<div class="content">'+
             '<div class="site-notice">'+
             '</div>'+
@@ -264,7 +264,7 @@ var coordinates = [
             '<p>These 1428 trials were the first ones in Switzerland that led to systematic execution. Townspeople started being accused of witchcraft in the lower region of Valais, but the accusations quickly began to spread throughout the entirety of Valais. Local authorities proclaimed that trials would begin to convict the witches. Torture was employed if a person was accused by five or more people. The accused witches were charged with murder, heresy and sorcery, and making deals with the devil. The exact number of people executed is unknown, but is estimated to be above 200 people.</p>'+
             '</div>'+
             '</div>'],
-  ['Paris', 48.857482, 2.349461, 1, 'cat3',
+  ['Paris', 48.857482, 2.349461, 1, 'witchOverHouse',
             '<div class="content">'+
             '<div class="site-notice">'+
             '</div>'+
